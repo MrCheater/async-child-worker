@@ -1,0 +1,49 @@
+{
+  "name": "async-child-worker",
+  "version": "1.0.0",
+  "description": "Fork Node.js process + Watch file system changes and restart + Async RPC over IPC",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run build && jest",
+    "build": "babel --out-dir ./dist ./src",
+    "prettier": "prettier-eslint --write \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrCheater/async-child-worker.git"
+  },
+  "keywords": [
+    "fork",
+    "watch",
+    "fsevents",
+    "worker",
+    "rpc",
+    "ipc",
+    "async"
+  ],
+  "author": "Mr.Cheater (Anton Zhukov)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrCheater/async-child-worker/issues"
+  },
+  "homepage": "https://github.com/MrCheater/async-child-worker#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/node": "^7.0.0-beta.51",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-stage-0": "^7.0.0-beta.51",
+    "@babel/runtime": "^7.0.0-beta.51",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.0.1",
+    "jest": "^23.1.0",
+    "prettier-eslint-cli": "^4.7.1",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "dependencies": {
+    "chokidar": "^2.0.4",
+    "uuid": "^3.2.1"
+  }
+}
